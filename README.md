@@ -47,5 +47,5 @@ python3 interface.py dataset_test/yQdeva7.jpg
 
 ## Train trick
 
-1e-4 lr train 30-epoch for warm-up
-2e-5 lr train about 10-epoch for fine tuning
+- 1e-4 lr train 30-epoch for warm-up
+- 2e-5 lr train about 10-epoch for fine tuning
