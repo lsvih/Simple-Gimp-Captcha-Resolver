@@ -27,7 +27,7 @@ class Dataset(data.Dataset):
         img = cv2.imread(os.path.join(self.img_root, img_name))
         img = cv2.resize(img, (200, 64))
         lower = np.array([0, 0, 0])
-        upper = np.array([100, 100, 100])
+        upper = np.array([150, 150, 150])
         img = cv2.inRange(img, lower, upper)
         element = cv2.getStructuringElement(cv2.MORPH_RECT, (2, 2))
         img = cv2.dilate(img, element, iterations=2)
